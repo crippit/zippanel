@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ZipCaptions Persistent Caption Overlay",
-  "version": "1.3",
+  "version": "1.4",
   "description": "Displays live captions from a source tab in a customizable overlay on all tabs.",
   "permissions": [
     "scripting",
