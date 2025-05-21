@@ -1,0 +1,36 @@
+#custom-zip-caption-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Base background color with default alpha is now set by content.js applyOverlayStyles */
+    /* background-color: rgba(0, 0, 0, 0.85); */ 
+    color: white;
+    padding: 10px 20px;
+    /* Default font-size is now set by content.js applyOverlayStyles */
+    /* font-size: 18px; */
+    font-family: Arial, sans-serif; 
+    z-index: 2147483647; 
+    box-sizing: border-box;
+    text-align: center; 
+    line-height: 1.4;
+    max-height: 25vh; 
+    overflow-y: auto; 
+    border-top: 1px solid #444;
+    display: none; /* Initially hidden, content.js will manage via isOverlayGloballyEnabled */
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Smooth transitions for style changes */
+}
+
+#custom-zip-caption-overlay::-webkit-scrollbar {
+    width: 10px;
+}
+
+#custom-zip-caption-overlay::-webkit-scrollbar-track {
+    background: #2c2c2c;
+}
+
+#custom-zip-caption-overlay::-webkit-scrollbar-thumb {
+    background-color: #777;
+    border-radius: 5px;
+    border: 2px solid #2c2c2c;
+}
